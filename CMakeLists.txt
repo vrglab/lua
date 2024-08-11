@@ -16,3 +16,5 @@ include_directories("${CMAKE_INCLUDE_PATH}")
 link_directories(${CMAKE_LIBRARY_PATH})
 
 add_library(${PROJECT_NAME} STATIC ${SRC_FILES} ${INCLUDE_FILES})
+
+#target_compile_definitions(${PROJECT_NAME} PRIVATE LUA_BUILD_AS_DLL LUA_CORE)
